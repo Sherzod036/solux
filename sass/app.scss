@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	max-width: 1920px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	transition: 1s ease;
+
+	&.layout_1 {
+		background: #fff;
+	}
+	&.layout_2 {
+		background: #29abe2;
+	}
+	&.layout_3 {
+		background: #5a9453;
+	}
+	&.layout_4 {
+		background: #F7931E;
+	}
+	&.layout_5 {
+		background: #A6AA9D;
+	}
+}
+
+.layout {
+	width: 100%;
+	height: 100vh;
+}
+
+@import '_adaptive';
