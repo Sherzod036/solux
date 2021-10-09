@@ -232,6 +232,33 @@ img {
 	}
 }
 
+.vert {
+	position: absolute;
+
+	&_1 {
+		left: 76px;
+    width: 239px;
+    top: 113px;
+	}
+	&_2 {
+		top: 105px;
+    width: 150px;
+    left: 435px;
+	}
+	&_3 {
+		width: 230px;
+    position: absolute;
+    right: 53px;
+    top: 425px;
+	}
+}
+
+.gr1 {
+	position: absolute;
+	right: 411px;
+	top: 132px;
+}
+
 .bike {
 	display: block;
 	width: 300px;
@@ -274,7 +301,6 @@ img {
 		font-size: 63px;
 		line-height: 79px;
 		letter-spacing: 0.015em;
-		margin-bottom: 140px;
 	}
 
 	&__graphic {
