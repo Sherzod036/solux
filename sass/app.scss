@@ -5,28 +5,28 @@
 }
 
 @font-face {
-  font-family: "Source Sans Pro", sans-serif;
-  src: url("../fonts/SourceSansPro/sourcesanspro-regular-webfont.woff2")
-      format("woff2"),
-    url("../fonts/SourceSansPro/sourcesanspro-regular-webfont.woff")
-      format("woff");
+  font-family: 'Source Sans Pro', sans-serif;
+  src: url('../fonts/SourceSansPro/sourcesanspro-regular-webfont.woff2')
+      format('woff2'),
+    url('../fonts/SourceSansPro/sourcesanspro-regular-webfont.woff')
+      format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Source Sans Pro", sans-serif;
-  src: url("../fonts/SourceSansPro/sourcesanspro-bold-webfont.woff2")
-      format("woff2"),
-    url("../fonts/SourceSansPro/sourcesanspro-bold-webfont.woff") format("woff");
+  font-family: 'Source Sans Pro', sans-serif;
+  src: url('../fonts/SourceSansPro/sourcesanspro-bold-webfont.woff2')
+      format('woff2'),
+    url('../fonts/SourceSansPro/sourcesanspro-bold-webfont.woff') format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 body {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 29px;
@@ -53,6 +53,10 @@ body {
   &.layout_5 {
     background: #a6aa9d;
   }
+}
+
+.body-uomo {
+  background: #29abe2;
 }
 
 .wrapper {
@@ -369,5 +373,5 @@ img {
   }
 }
 
-@import "_uomo";
-@import "_adaptive";
+@import '_uomo';
+@import '_adaptive';
