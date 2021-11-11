@@ -1,42 +1,56 @@
 document.addEventListener('DOMContentLoaded', () => {
-	// onceFunc()
-	// const generateLayouts = []
+  let hamb = document.querySelector('.hamb')
+  let menu = document.querySelector('.menu')
+  let menu_close = document.querySelector('.menu__close')
 
-	// for (let i = 0; i < 5; i++) {
-	// 	generateLayouts.push(`layout_${i + 1}`)
-	// }
+  hamb.addEventListener('click', (e) => {
+    e.preventDefault()
+    menu.classList.add('visible')
+  })
 
-	// const changeBodyBg = (id, addClass, tween) => {
-	// 	new ScrollMagic.Scene({ triggerElement: id })
-	// 		.setTween(tween)
-	// 		.setClassToggle(document.body, addClass)
-	// 		.addTo(controller)
-	// }
+  menu_close.addEventListener('click', (e) => {
+    e.preventDefault()
+    menu.classList.remove('visible')
+  })
 
-	// generateLayouts.map(i => changeBodyBg(`#${i}`, i, tween))
+  // onceFunc()
+  // const generateLayouts = []
 
-	// function onceFunc() {
-	// 	TweenMax.fromTo('.hero__graphic', 2, { rotation: -43 }, { rotation: 0 })
-	// }
+  // for (let i = 0; i < 5; i++) {
+  // 	generateLayouts.push(`layout_${i + 1}`)
+  // }
 
-	const controller = new ScrollMagic.Controller()
-	// Tweens
-	const tween = TweenMax.to('#lottie', 2, { rotation: -31 })
+  // const changeBodyBg = (id, addClass, tween) => {
+  // 	new ScrollMagic.Scene({ triggerElement: id })
+  // 		.setTween(tween)
+  // 		.setClassToggle(document.body, addClass)
+  // 		.addTo(controller)
+  // }
 
-	new ScrollMagic.Scene({ triggerElement: '#layout_2' })
-		.setTween(tween)
-		.setClassToggle(document.body, 'layout_2')
-		.addTo(controller)
+  // generateLayouts.map(i => changeBodyBg(`#${i}`, i, tween))
 
-	new ScrollMagic.Scene({ triggerElement: '#layout_3' })
-		.setClassToggle(document.body, 'layout_3')
-		.addTo(controller)
+  // function onceFunc() {
+  // 	TweenMax.fromTo('.hero__graphic', 2, { rotation: -43 }, { rotation: 0 })
+  // }
 
-	new ScrollMagic.Scene({ triggerElement: '#layout_4' })
-		.setClassToggle(document.body, 'layout_4')
-		.addTo(controller)
+  const controller = new ScrollMagic.Controller()
+  // Tweens
+  const tween = TweenMax.to('#lottie', 2, { rotation: -31 })
 
-	new ScrollMagic.Scene({ triggerElement: '#layout_5' })
-		.setClassToggle(document.body, 'layout_5')
-		.addTo(controller)
+  new ScrollMagic.Scene({ triggerElement: '#layout_2' })
+    .setTween(tween)
+    .setClassToggle(document.body, 'layout_2')
+    .addTo(controller)
+
+  new ScrollMagic.Scene({ triggerElement: '#layout_3' })
+    .setClassToggle(document.body, 'layout_3')
+    .addTo(controller)
+
+  new ScrollMagic.Scene({ triggerElement: '#layout_4' })
+    .setClassToggle(document.body, 'layout_4')
+    .addTo(controller)
+
+  new ScrollMagic.Scene({ triggerElement: '#layout_5' })
+    .setClassToggle(document.body, 'layout_5')
+    .addTo(controller)
 })
