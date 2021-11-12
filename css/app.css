@@ -530,6 +530,10 @@ img {
   margin-bottom: 0;
 }
 
+.page-common {
+  padding-top: 100px;
+}
+
 .page-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -540,9 +544,6 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-.page-content:first-child {
-  margin-top: 100px;
 }
 .page-content__descriptions {
   max-width: 500px;
@@ -557,6 +558,7 @@ img {
 .page-content__description {
   font-size: 15px;
   line-height: 25px;
+  margin-bottom: 25px;
 }
 .page-content__images {
   position: relative;
@@ -572,6 +574,127 @@ img {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+.v-block__common {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.v-block__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.v-block__title {
+  font-size: 60px;
+  color: #6e7377;
+  margin-bottom: 100px;
+}
+.v-block__description {
+  font-size: 15px;
+  color: #6e7377;
+  margin-bottom: 80px;
+}
+.v-block__marks {
+  width: 355px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.v-block__mark {
+  margin-bottom: 7px;
+}
+.v-block__big-mark {
+  margin-left: 15px;
+}
+
+.nap-block {
+  width: 643px;
+}
+.nap-block img {
+  width: 100%;
+}
+
+.hash-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 15px;
+}
+.hash-tags .hash-tag {
+  font-weight: 700;
+  font-size: 15px;
+}
+.hash-tags .hash-tag:first-child {
+  color: #3493d3;
+  margin-right: 50px;
+}
+.hash-tags .hash-tag:nth-child(2) {
+  color: #f07612;
+}
+
+.tag {
+  width: 500px;
+  margin-left: -100px;
+  margin-bottom: 50px;
+}
+.tag img {
+  width: 100%;
+}
+
+#vert_menu {
+  overflow: hidden;
+  width: 100%;
+}
+
+#vert_menu li {
+  float: left;
+}
+
+#vert_menu a {
+  padding: 8px 20px 8px 40px;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  color: #6e7377;
+  position: relative;
+  background: #fff;
+  min-width: 181px;
+  width: auto;
+  border: 1px solid #6e7377;
+}
+
+#vert_menu a::after,
+#vert_menu a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 2em solid;
+  right: -2em;
+}
+
+#vert_menu a::after {
+  z-index: 2;
+  border-left-color: #525252;
 }
 
 @media (max-width: 1400px) {
