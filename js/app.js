@@ -10,7 +10,8 @@ $(document).ready(function() {
       </svg>`,
       `<svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M-2.25925e-05 -5.12608e-05L19.1 12.6L-2.47955e-05 25.1999L-2.25925e-05 -5.12608e-05Z" fill="#828588"/>
-      </svg>`]
+      </svg>`
+    ]
   })
 })
 
