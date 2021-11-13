@@ -1,3 +1,20 @@
+$(document).ready(function() {
+  $('.slider').owlCarousel({
+    items: 1,
+    dots: false,
+    loop: true,
+    nav: true,
+    navText: [
+      `<svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19.1 25.2L0 12.6L19.1 0V25.2Z" fill="#828588"/>
+      </svg>`,
+      `<svg width="20" height="26" viewBox="0 0 20 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M-2.25925e-05 -5.12608e-05L19.1 12.6L-2.47955e-05 25.1999L-2.25925e-05 -5.12608e-05Z" fill="#828588"/>
+      </svg>`]
+  })
+})
+
+
 document.addEventListener('DOMContentLoaded', () => {
 	let hamb = document.querySelector('.hamb')
 	let menu = document.querySelector('.menu')
@@ -54,5 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	new ScrollMagic.Scene({ triggerElement: '#layout_5' })
 		.setClassToggle(document.body, 'layout_5')
+		.addTo(controller)
+	new ScrollMagic.Scene({ triggerElement: '#layout_6' })
+		.setClassToggle(document.body, 'layout_6')
 		.addTo(controller)
 })
