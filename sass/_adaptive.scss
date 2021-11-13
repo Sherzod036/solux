@@ -1,88 +1,175 @@
-@media(max-width: 1400px) {
-  .hero__title {
-    font-size: 54px;
-    line-height: 69px;
-    margin-bottom: 20px;
-  }
+@media (max-width: 1400px) {
+	.hero__title {
+		font-size: 54px;
+		line-height: 69px;
+		margin-bottom: 20px;
+	}
 
+	.tag {
+		margin-left: 0;
+	}
 
-
-  .hero__mid-item {
-    font-size: 54px;
-    line-height: 55px;
-    margin-bottom: 15px;
-  }
-  .hero__mid {
-    margin-bottom: 20px;
-  }
+	.hero__mid-item {
+		font-size: 54px;
+		line-height: 55px;
+		margin-bottom: 15px;
+	}
+	.hero__mid {
+		margin-bottom: 20px;
+	}
 }
-@media(max-width: 1200px) {
-  .layout {
-    height: auto;
-    margin-bottom: 80px;
-  }
-  .content__inner {
-    max-width: 100%;
-  }
-  .content__title {
-    font-size: 40px;
-    line-height: 48px;
-    margin-bottom: 35px;
-  }
-  .content__description {
-    text-align: justify;
-    margin-bottom: 35px;
-  }
-  .hero, .content {
-    flex-direction: column;
-  }
-  .hero__title {
-    font-size: 40px;
-    text-align: center;
-    max-width: 100%;
-    line-height: 48px;
-  }
-  .hero__mid-item {
-    text-align: center;
-    font-size: 40px;
-  }
-  .hero__mid {
-    margin: 0 auto;
-  }
-  .hero__info {
-    justify-content: center;
-    margin-bottom: 40px;
-  }
+@media (max-width: 1200px) {
+	.layout {
+		height: auto;
+		margin-bottom: 80px;
+	}
+	.content__inner {
+		max-width: 100%;
+	}
+	.content__title {
+		font-size: 40px;
+		line-height: 48px;
+		margin-bottom: 35px;
+	}
+	.content__description {
+		text-align: justify;
+		margin-bottom: 35px;
+	}
+	.hero,
+	.content {
+		flex-direction: column;
+	}
+	.hero__title {
+		font-size: 40px;
+		text-align: center;
+		max-width: 100%;
+		line-height: 48px;
+	}
+	.hero__mid-item {
+		text-align: center;
+		font-size: 40px;
+	}
+	.hero__mid {
+		margin: 0 auto;
+	}
+	.hero__info {
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+	.header__logo-text {
+		display: none;
+	}
 }
-@media(max-width: 992px) {
-  .hero__info {
-    flex-direction: column;
-  }
-  .hero__desc {
-    max-width: 100%;
-    margin-right: 0;
-    border-right: 0;
-    padding-right: 0;
-    text-align: justify;
-  }
+@media (max-width: 992px) {
+	.v-block__wrapper {
+		flex-direction: column;
+	}
+	.v-block__content {
+		padding: 50px 0;
+	}
+	.hero__info {
+		flex-direction: column;
+	}
+	.hero__desc {
+		max-width: 100%;
+		margin-right: 0;
+		border-right: 0;
+		padding-right: 0;
+		text-align: justify;
+	}
+	.list__item {
+		margin-right: 25px;
+	}
+	.hamb {
+		width: 35px;
+		& span {
+			margin-bottom: 7px;
+		}
+	}
+	.header {
+		padding: 10px 0;
+	}
+	.page-content {
+		flex-direction: column;
+	}
+	.page-content__descriptions {
+		max-width: 100%;
+	}
+	.page-content:first-child {
+		margin-bottom: 50px;
+	}
+	.page-common {
+		padding-top: 50px;
+	}
+	.page-content__description {
+		text-align: justify;
+	}
+	.page-content__title {
+		margin-bottom: 35px;
+		font-size: 40px;
+		line-height: 50px;
+	}
+	.v-block__common {
+		flex-wrap: wrap;
+		margin-bottom: 35px;
+	}
+	.v-block__marks {
+		margin: 0 auto;
+	}
+	.v-block__mark {
+		margin-bottom: 19px;
+	}
+	.v-block__big-mark {
+		width: 100%;
+		margin-left: 0;
+		& img {
+			margin: 0 auto;
+		}
+	}
 }
-@media(max-width: 768px) {}
-@media(max-width: 576px) {}
-@media(max-width: 500px) {
-  .content__title {
-    font-size: 30px;
-    line-height: 38px;
-  }
-  .bike {
-    width: 155px;
-  }
-  .vert_1 {
-    top: 10px;
-  }
-  .vert_2, .vert_3 {
-    display: none;
-  }
-  .content__link {
-    margin-bottom: 35px;
-  }
+@media (max-width: 768px) {
+	.header__navigation {
+		display: none;
+	}
+	.page-content__images {
+		width: 100%;
+	}
+	.nap-block,
+	.tag {
+		width: 100%;
+	}
+}
+@media (max-width: 576px) {
+}
+@media (max-width: 500px) {
+	.content__title {
+		font-size: 30px;
+		line-height: 38px;
+	}
+	.bike {
+		width: 155px;
+	}
+	.vert_1 {
+		top: 10px;
+	}
+	.vert_2,
+	.vert_3 {
+		display: none;
+	}
+	.content__link {
+		margin-bottom: 35px;
+	}
+	.page-content__title {
+		font-size: 30px;
+		line-height: 40px;
+	}
+	.page-content__graphic {
+		width: 140px !important;
+	}
+	.v-block__marks {
+		width: 100%;
+	}
+	.dragonfly-pic {
+		width: 270px !important;
+	}
 }
