@@ -197,6 +197,7 @@
 				<div id="layout_1" class="layout">
 					<div class="hero wrapper">
 						<div class="hero__content">
+							<div id="lottie2" class="n" style="margin-bottom: 35px;"></div>
 							<div class="hero__title" data-aos="fade-up" data-aos-duration="2000">
 								<span class="hero__logo">
 									<img src="img/logos/logo.svg" alt="" />
@@ -17039,9 +17040,19 @@
 				animationData: animationData
 			}
 
+			var params2 = {
+				container: document.getElementById('lottie2'),
+				renderer: 'svg',
+				// loop: true,
+				autoplay: true,
+				animationData: animationData
+			}
+
 			var anim
+			var anim2
 
 			anim = lottie.loadAnimation(params)
+			anim2 = lottie.loadAnimation(params2)
 		</script>
 	</body>
 </html>
