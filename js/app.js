@@ -26,45 +26,31 @@ $(document).ready(function() {
 			$(this).siblings('.menu__list-links').toggleClass('d-block')
 		})
 	}
+
+	const hamb = $('.hamb')
+	const menu = $('.menu')
+	const menu_close = $('.menu__close')
+	hamb.on('click', function(e) {
+		e.preventDefault()
+		menu.addClass('visible')
+	})
+
+	menu_close.on('click', function(e) {
+		e.preventDefault()
+		menu.removeClass('visible')
+	})
+
+	$(window).on('scroll', function(e) {
+		if($(this).scrollTop() > 150) {
+			$('.header--home').addClass('down')
+		} else {
+			$('.header--home').removeClass('down')
+		}
+	})
 })
 
 
 document.addEventListener('DOMContentLoaded', () => {
-	let hamb = document.querySelector('.hamb')
-	let menu = document.querySelector('.menu')
-	let menu_close = document.querySelector('.menu__close')
-
-	if (hamb) {
-		hamb.addEventListener('click', (e) => {
-			e.preventDefault()
-			menu.classList.add('visible')
-		})
-
-		menu_close.addEventListener('click', (e) => {
-			e.preventDefault()
-			menu.classList.remove('visible')
-		})
-	}
-
-	// onceFunc()
-	// const generateLayouts = []
-
-	// for (let i = 0; i < 5; i++) {
-	// 	generateLayouts.push(`layout_${i + 1}`)
-	// }
-
-	// const changeBodyBg = (id, addClass, tween) => {
-	// 	new ScrollMagic.Scene({ triggerElement: id })
-	// 		.setTween(tween)
-	// 		.setClassToggle(document.body, addClass)
-	// 		.addTo(controller)
-	// }
-
-	// generateLayouts.map(i => changeBodyBg(`#${i}`, i, tween))
-
-	// function onceFunc() {
-	// 	TweenMax.fromTo('.hero__graphic', 2, { rotation: -43 }, { rotation: 0 })
-	// }
 
 	const controller = new ScrollMagic.Controller()
 	// Tweens
