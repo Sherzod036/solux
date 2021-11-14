@@ -51,7 +51,7 @@ body {
 		background: #f7931e;
 	}
 	&.layout_5 {
-		background: #a6aa9d;
+		background: #7D8996;
 	}
   &.layout_6 {
     background: #fff;
@@ -84,9 +84,8 @@ body {
 	display: flex;
 }
 
-.layout:nth-child(5) {
+.h-auto {
 	height: auto;
-	padding: 100px 0;
 }
 
 h1,
@@ -325,6 +324,7 @@ img {
 		font-size: 63px;
 		line-height: 79px;
 		letter-spacing: 0.015em;
+		margin-bottom: 40px;
 	}
 
 	&__graphic {
@@ -333,55 +333,35 @@ img {
 		top: 0;
 		right: 0;
 	}
-	&__list {
-		position: relative;
-		&-item {
-			display: flex;
-			position: absolute;
 
-			&:first-child {
-				right: 190px;
-				top: 160px;
-			}
-			&:nth-child(2) {
-				right: 190px;
-				top: 315px;
-			}
-			&:nth-child(3) {
-				right: 190px;
-				top: 480px;
-			}
-			&:nth-child(4) {
-				right: 190px;
-				top: 636px;
-			}
-			&:nth-child(5) {
-				right: 190px;
-				top: 795px;
-			}
-			&:nth-child(6) {
-				right: 190px;
-				top: 954px;
-			}
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 80px;
+		&-item {
+			width: 18%;
+		}
+		&-count {
+			font-size: 25px;
+			font-weight: 700;
+			margin-bottom: 10px;
 		}
 		&-title {
-			font-weight: 700;
+			margin-bottom: 15px;
 			font-size: 25px;
-			letter-spacing: 0.015em;
+			font-weight: 700px;
 		}
-		&-num {
+		&-desc {
+			font-size: 15px;
 			font-weight: 700;
-			font-size: 131px;
-			line-height: 102px;
-			margin-right: 28px;
-		}
-		&-description {
-			max-width: 474px;
-			width: 100%;
-			font-size: 17px;
-			line-height: 25px;
 		}
 	}
+}
+
+.sloy {
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 .v-category {
@@ -421,7 +401,7 @@ img {
   }
   &__button {
     position: relative;
-    display: block;
+    display: inline-block;
     color: #464645;
     background: none;
     font-size: 15px;
@@ -430,8 +410,8 @@ img {
     &-text {
       position: absolute;
       top: 50%;
-      left: 24%;
-      transform: translate(-50%, -50%);
+      left: 8%;
+      transform: translateY(-50%);
     }
   }
 }
@@ -481,7 +461,8 @@ img {
     font-weight: 700;
   }
   &__image {
-    width: 600px;
+    max-width: 600px;
+		width: 100%;
     & img {
       width: 100%;
     }
@@ -608,6 +589,8 @@ img {
 }
 
 .user {
+	position: relative;
+	z-index: 4;
   &-title {
     color: #6b6b6b;
     font-size: 50px;
@@ -619,10 +602,24 @@ img {
   }
 }
 
+.d-block {
+	display: block !important;
+}
+
 .ingegnosi {
   width: 100%;
   padding: 80px 0;
   background: #fff;
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__desc {
+		max-width: 600px;
+		width: 100%;
+		font-size: 15px;
+		color: #6E7377;
+	}
   &__pre-title {
     font-size: 26px;
     color: #6E7377;
@@ -705,6 +702,21 @@ img {
     background: #fff;
     margin: 20px 0;
   }
+}
+
+.n {
+	display: none;
+}
+.only-hamb {
+	width: 100%;
+	padding-top: 35px;
+	padding-bottom: 35px;
+}
+
+.only-hamb-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end
 }
 
 @import '_uomo';

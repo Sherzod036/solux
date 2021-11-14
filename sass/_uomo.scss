@@ -1,5 +1,5 @@
 .menu {
-	padding: 35px;
+	padding: 25px;
 	position: fixed;
 	right: -100%;
 	opacity: 0;
@@ -9,10 +9,48 @@
 	height: 100vh;
 	background: #777769;
 	transition: 0.5s;
+	&__close {
+		position: absolute;
+		right: 25px;
+		top: 25px;
+	}
 	&.visible {
 		right: 0;
 		opacity: 1;
 		visibility: visible;
+	}
+	&__list {
+		padding-left: 35px;
+		padding-top: 15px;
+		&-block {
+			margin-bottom: 10px;
+		}
+		&-subscribe {
+			display: flex;
+			margin-top: 15px;
+			& a {
+				display: block;
+				margin-right: 10px;
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+		&-title {
+			font-size: 17px;
+			font-weight: 700;
+			color: #4D4D43;
+		}
+		&-link {
+			font-size: 17px;
+			color: #fff;
+			display: block;
+		}
+		&-loc {
+			font-size: 17px;
+			display: block;
+			color: #4D4D43;
+		}
 	}
 }
 
@@ -21,6 +59,16 @@
 	width: 100%;
 	padding: 0 15px;
 	margin: 0 auto;
+}
+
+.v-categories__link {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	color: #6E7377;
+	font-size: 26px;
+	text-decoration: underline;
+	margin: 40px 0;
 }
 
 .header {

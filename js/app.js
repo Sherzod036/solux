@@ -13,6 +13,19 @@ $(document).ready(function() {
       </svg>`
     ]
   })
+
+	if($(window).width() < 992) {
+		$('.grafik__block-title').css({ cursor: 'pointer' })
+		$('.grafik__block-title').on('click', function() {
+			$(this).siblings('.grafik__inner').toggleClass('d-block')
+		})
+	}
+
+	if($(window).width() < 1200) {
+		$('.menu__list-title').on('click', function() {
+			$(this).siblings('.menu__list-links').toggleClass('d-block')
+		})
+	}
 })
 
 
