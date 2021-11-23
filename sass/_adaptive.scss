@@ -106,11 +106,7 @@
 	.content__graphic {
 		margin-bottom: 45px;
 	}
-	.hero__mid {
-		margin: 0 auto;
-	}
 	.hero__info {
-		justify-content: center;
 		margin-bottom: 40px;
 	}
 	.header__logo-text {
@@ -134,6 +130,15 @@
 	}
 }
 @media (max-width: 992px) {
+	.hero__sketch {
+		width: 100%;
+		border-top: 1px solid #6b6b6b;
+		padding-top: 25px;
+		margin-top: 25px;
+	}
+	.hero__sketch img {
+		width: 100%;
+	}
 	.grafik__inner {
 		flex-direction: column;
 	}
@@ -343,5 +348,12 @@
 	}
 	.grafik__block-title {
 		font-size: 16px;
+	}
+	.hero__logo {
+		width: 109px;
+	}
+	.hero__mid-item {
+		font-size: 30px;
+		line-height: 32px;
 	}
 }

@@ -36,6 +36,10 @@ body {
 	}
 }
 
+.mega {
+	overflow: hidden;
+}
+
 .body-uomo {
 	background: #29abe2;
 }
@@ -104,6 +108,7 @@ img {
 	justify-content: space-between;
 	&__logo {
 		display: inline-block;
+		width: 150px;
 	}
 	&__title {
 		max-width: 417px;
@@ -120,8 +125,8 @@ img {
 		margin-bottom: 40px;
 		&-item {
 			font-style: normal;
-			font-size: 50px;
-			line-height: 65px;
+			font-size: 30px;
+			line-height: 43px;
 			color: #6b6b6b;
 			&:first-child span {
 				color: #29abe2;
@@ -134,7 +139,7 @@ img {
 			}
 			& span {
 				font-weight: 700;
-				font-size: 35px;
+				font-size: 22px;
 			}
 		}
 	}
@@ -150,7 +155,7 @@ img {
 		font-weight: 300;
 		padding-right: 20px;
 		margin-right: 20px;
-		border-right: 1px solid #6b6b6b;
+		border-right: 1px solid #dde1e4;
 	}
 	&__sketch {
 		display: block;
@@ -289,7 +294,7 @@ img {
 }
 
 .invest {
-	margin-top: 100px;
+	margin-top: 200px;
 	&__pre-title {
 		display: block;
 		font-size: 26px;
@@ -343,8 +348,8 @@ img {
 
 .sloy {
 	position: absolute;
-	right: 348px;
-	top: 59px;
+	right: 287px;
+	top: -3px;
 }
 
 .v-category {
@@ -489,12 +494,12 @@ img {
 	}
 	&__block {
 		border-bottom: 1px solid #6e7377;
-		margin-bottom: 30px;
+		margin-bottom: 15px;
 		&-title {
 			display: flex;
 			align-items: center;
-			font-size: 26px;
-			font-weight: 300;
+			font-size: 23px;
+			font-weight: 200;
 			color: #6e7377;
 			margin-bottom: 15px;
 			& img {
@@ -619,6 +624,7 @@ img {
 		margin-bottom: 10px;
 	}
 	&__title {
+		font-weight: 700;
 		font-size: 60px;
 		color: #6e7377;
 		margin-bottom: 70px;
@@ -726,7 +732,10 @@ img {
 
 .d-flex {
 	display: flex !important;
-	flex-direction: column;
+}
+.df-fdc {
+	display: flex !important;
+	flex-direction: column !important;
 }
 
 .layout_hr {

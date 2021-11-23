@@ -22,8 +22,8 @@ $(document).ready(function () {
 
 	if ($(window).width() < 1200) {
 		$('.menu__list-title').on('click', function () {
-			$('.menu__list-links').removeClass('d-flex')
-			$(this).siblings('.menu__list-links').toggleClass('d-flex')
+			$('.menu__list-links').removeClass('df-fdc')
+			$(this).siblings('.menu__list-links').toggleClass('df-fdc')
 		})
 	}
 
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		.setClassToggle(document.body, 'layout_4')
 		.addTo(controller)
 
-	new ScrollMagic.Scene({ triggerElement: '#layout_5' })
+	new ScrollMagic.Scene({ triggerElement: '#layout_5', offset: -200 })
 		.setClassToggle(document.body, 'layout_5')
 		.addTo(controller)
 })
